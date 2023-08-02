@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <marquee behavior="" direction="up"><center><h1>This is my heading tag</h1></center></marquee>
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea animi recusandae hic commodi cum odit temporibus maiores cupiditate laudantium ab, minus similique impedit officia dignissimos praesentium, debitis quisquam beatae cumque odio sunt ullam facere eum non. Porro iste ipsam amet? Veritatis, accusantium nemo. Numquam repellat animi laudantium labore ex!</p>
@@ -19,42 +19,110 @@
    
     <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Nature image"
     width="50%"> -->
-    <a href="https://google.com" target="_blank">Google</a> <br>
+    <!-- <a href="https://google.com" target="_blank">Google</a> <br />
     <a href="https://Instagram.com" target="_blank">Instagram</a>
 
     <ul>
-        <li>Home</li>
-        <li>contact</li>
-        <li>about us</li>
-        <li> sign in</li>
+      <li>Home</li>
+      <li>contact</li>
+      <li>about us</li>
+      <li>sign in</li>
     </ul>
-    
-    <Ol  type="A">
-        <li>Home</li>
-        <li>contact</li>
-        <li>about us</li>
-        <li> sign in</li>
+
+    <ol type="A">
+      <li>Home</li>
+      <li>contact</li>
+      <li>about us</li>
+      <li>sign in</li>
     </ol>
 
     <dl>
-        <dt>Coffee</dt>
-        <dd>cola coffee 40</dd>
-        <dd>black coffee 80</dd>
-        <dd> green coffee 120</dd>
+      <dt>Coffee</dt>
+      <dd>cola coffee 40</dd>
+      <dd>black coffee 80</dd>
+      <dd>green coffee 120</dd>
 
-        <dt>Tea</dt>
-        <dd>cola tea 40</dd>
-        <dd>black tea 80</dd>
-        <dd> green tea 120</dd>
+      <dt>Tea</dt>
+      <dd>cola tea 40</dd>
+      <dd>black tea 80</dd>
+      <dd>green tea 120</dd>
     </dl>
 
-    <video width="50%" >
-    <source src="video (2160p).mp4">
- </video> 
+    <video width="50%" controls>
+      <source src="video (2160p).mp4" />
+    </video>
 
- <audio>
-    <source src="Halsey_-_Without_Me(256k).mp3">
- </audio>
- 
-</body>
+    <audio autoplay controls>
+      <source src="Halsey_-_Without_Me(256k).mp3" />
+    </audio> -->
+
+    <!-- <table border="2">
+        <tr>
+            <th>ID</th>
+            <th colspan="2">Name</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td rowspan="2">Manan</td>
+            <td>1234</td>
+            <td>manankhandel....@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Meet</td>
+            <td>2562</td>
+            <td>meet....@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Masha</td>
+            <td>1ha</td>
+            <td>majkah....@gmail.com</td>
+        </tr>
+    </table> -->
+
+    <form action="https://ahs.html" method="get or post">
+      <!-- get -for less security means show krega infor url m -->
+      <!--post - for more security-->
+
+      <label for="" style="color: green"> Name </label> : <input type="text" required /> <br /><br />
+      Email :<input type="email" required value="man@gmail.com" readonly /><br /><br />
+      Password : <input type="password" required /> <br /><br />
+      Gender : <input type="radio" name="a" />Male
+               <input type="radio" name="a" />Female <br /><br />
+      Language : <input type="checkbox" />Hindi 
+                 <input type="checkbox" />English
+                 <input type="checkbox" />Marwadi <br /><br />
+      Date : <input type="date" /> <br /><br />
+      Time : <input type="time" /> <br /><br />
+      Range : <input type="range" /> <br /><br />
+      Number : <input type="number" /> <br /><br />
+      Color : <input type="color" /> <br /><br />
+      City : <select name="" id="">
+               <option value="">None</option>
+               <option value="">Jaipur</option>
+               <option value="">Kota</option>
+               <option value="">Ggc</option>
+      </select> <br><br>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Write your's message"></textarea> <br><br>
+      
+      <button>Submit</button>
+    </form>
+
+    <div>
+        <h1>My Name is <span style="color: red;">Manan</span>  Khandelwal</h1>
+        <!--span esliye use kiya taaki css lga ske manan pr agr koi dusra tag use krenge toh niche chala jayega kyuki vo block tag-->
+
+        Html <progress id="manan" max="100" value="10"></progress> <br><br>
+        CSS <progress id="manan" max="100" value="40"></progress> <br><br>
+        Java <progress id="manan" max="100" value="50"></progress> <br><br>
+        Linux <progress id="manan" max="100" value="90"></progress> <br><br>
+
+    </div>
+  </body>
 </html>
