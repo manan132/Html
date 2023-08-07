@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+   
+    <style>
+    
+        .container{
+        height: 180vh;
+        }
+        .header{
+        height: 89%;
+        display: flex;
+        justify-content: space-evenly;
+        }
+        .footer {
+        height: 12%;
+        background-color: rgba(0, 139, 139, 0.858);
+        color: white;
+        font-family: "Robota",sans-serif;
+        }
+        .foot1 {
+        height: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .foot2 {
+        height: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .logo{
+        margin: 3px;
+        cursor: pointer;
+        }
+        .foot3 {
+        height: 32%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .box1 {
+        height: 98%;
+        width: 30%;
+        box-shadow: 3px 4px 20px;
+        }
+        .image{
+        height: 26%;
+        }
+        .imagename{
+        font-size: 30px;
+        margin: 0%;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+        font-style: bold;
+        font-family: "Roboto", sans-serif;
+        }
+        .name{
+        height: 15%;
+        display: flex;
+        }
+        .name-logo{
+        height: 100%;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        }
+        .logo1{
+        height: 10%;
+        width: 45%;
+        margin-top: 20px;
+        margin-left: 10px;
+        }
+        #phone{
+        margin-top: 20px;
+        }
+        .name-position {
+        height: 100%;
+        width: 90%;
+        }
+        .name-design {
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+        margin: 1px;
+        font-family: "Roboto", sans-serif;
+        color: grey;
+        }
+        .skill{
+        height: 31%;
+        }
+        .skill1{
+        height: 10%;
+        display: flex;
+        }
+        .innerskill1{
+        width: 10%;
+        height: 99%;
+        }
+        .innerskill2{
+        width: 80%;
+        }
+        .skill2{
+        height:89%;
+        }
+        .asterisk{
+        margin-left: 15px; 
+        margin-top: 5px; 
+        height: 20px;
+        }
+        h5{
+        font-size: 25px;
+        color: grey;
+        margin-left: 1px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        }
+        .progress {
+        width: 90%;
+        padding: 12px;
+        margin-left: 10px;
+        }
+        .skillname {
+        margin-left: 10px;
+        font-family: "Roboto", sans-serif;
+        color: grey;
+        }
+        .language {
+        height: 25%;
+        }
+        .lang1{
+        height: 10%;
+        display: flex;
+        }
+        .globe{
+        width: 10%;
+        }
+        .world{
+        margin-left: 15px; 
+        margin-top: 5px; 
+        height: 20px;
+        }
+        .globename{
+        width: 90%;
+        }
+        .lang2{
+        height: 90%;
+        }
+        .languagename{
+        font-family: "Roboto", sans-serif;
+        color: grey; 
+        margin-left: 10px;
+        }
+        .language-progress{
+        width: 90%;
+        padding: 12px;
+        margin-left: 10px;
+        }
+        .box2 {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        }
+        .innerbox1{
+        height: 48%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 3px 2px 20px;
+        }
+        .innerbox2{
+        height: 48%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 3px 2px 20px;
+        }
+        .experience {
+        height: 15%;
+        font-family: "Robota",sans-serif;
+        font-size: 28px;
+        color: grey;
+        }
+        .experience-1{
+        margin-left: 25px;
+        }
+        .content1 {
+        height: 26%;
+        }
+        .content2 {
+        height: 25%;
+        }
+        .content3 {
+        height: 24%;
+        }
+        .title{
+        height: 30%;
+        color: grey;
+        font-family: "Robota",sans-serif;
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        }
+        .subtitle{
+        margin-left: 20px;
+        align-items: center;
+        }
+        .date{
+        height: 30%;
+        color: rgba(0, 139, 139, 0.858);
+        display: flex;
+        align-items: center;
+        }
+        .subdate{
+        font-size: 17px;
+        margin-left: 15px;
+        font-family: "Robota",sans-serif;
+        }
+        span{
+        background-color: rgba(0, 139, 139, 0.858);
+        color: white;
+        padding: 4px;
+        border-radius: 3px;
+        }
+        .description{
+        height: 40%;
+        font-family: "Robota",sans-serif;
+        display: flex;
+        align-items: center;
+        }
+        .subdescription{
+        margin-left: 20px;
+        font-size: 15px;
+        }
+        .education {
+        height: 15%;
+        font-family: "Robota",sans-serif;
+        font-size: 28px;
+        color: grey;
+        }
+        .education-1{
+        margin-left: 25px;
+        }
+        .academic1 {
+        height: 24%;
+        }
+       .academic2 {
+        height: 24%;
+        }
+        .academic3 {
+        height: 23%;
+        }
+        .academic-title{
+        height: 30%;
+        color: grey;
+        font-family: "Robota",sans-serif;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        }
+        .subacademict{
+        margin-left: 20px;
+        }
+        .academic-date{
+        height: 30%;
+        color: rgba(0, 139, 139, 0.858);
+        font-family: "Robota",sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        }
+        .subacademicd{
+        margin-left: 20px;
+        }
+        .academic-description{
+        height: 40%;
+        font-family: "Robota",sans-serif;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        }
+        .subacademicde{
+        margin-left: 20px;
+        }
+        .image1{
+        margin-left: 20px;
+        }
+        hr{
+        color: grey;
+        opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="box1">
+                <div class="image">
+                    <img
+                    src="https://www.w3schools.com/w3images/avatar_hat.jpg"
+                    alt=""
+                    height="100%"
+                    width="100%"/>
+                    <p class="imagename">Jane Doe</p>
+                </div>
+                <div class="name">
+                    <div class="name-logo">
+                        <img class="logo1" src="./briefcase.png" alt="">
+                        <img class="logo1"src="./home.png" alt="">
+                        <img class="logo1" src="./envelope.png" alt="">
+                        <img class="logo1" src="./phone-call.png" alt="">
+                    </div>
+                    <div class="name-position">
+                        <div class="name-design">
+                            <p>Designner</p>
+                        </div>
+                        <div class="name-design">
+                            <p>London, UK</p>
+                        </div>
+                        <div class="name-design">
+                            <p>ex@gmail.com</p>
+                        </div>
+                        <div class="name-design">
+                            <p id="phone">123456789</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="skill">
+                    <div class="skill1">
+                        <div class="innerskill1">
+                            <img class="asterisk" src="./asterisk.png" alt="" >
+                        </div>
+                        <div class="innerskill2">
+                          <h5>Skills</h5> -->
+                        </div>
+                    </div>
+                    <div class="skill2">
+                      <p class="skillname">Adobe Photoshop</p>
+                      <progress class="progress" max="100" value="90"></progress>
+                      <p class="skillname">Photgraphy</p>
+                      <progress class="progress" max="100" value="80"></progress>
+                      <p class="skillname">Illustrator</p>
+                      <progress class="progress" max="100" value="75"></progress>
+                      <p class="skillname">Media</p>
+                      <progress class="progress" max="100" value="50"></progress>
+                    </div>
+                </div>
+                <hr>
+                <div class="language">
+                    <div class="lang1">
+                        <div class="globe">
+                            <img class="world" src="./world.png" alt="">
+                        </div>
+                        <div class="globename">
+                           <h5>Languages</h5>
+                        </div>
+                    </div>
+                    <div class="lang2">
+                    <p class="languagename">English</p>
+                    <progress
+                     class="language-progress"
+                     max="100"
+                     value="100"
+                    ></progress>
+                    <p class="languagename">Spanish</p>
+                    <progress class="language-progress" max="100" value="80"></progress>
+                    <p class="languagename">German</p>
+                    <progress class="language-progress" max="100" value="40"></progress>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box2">
+                <div class="innerbox1">
+                    <div class="experience">
+                        
+                       <h4 class="experience-1">Work Experience</h4>
+                       
+                    </div>
+                    
+                    <div class="content1">
+                        <div class="title">
+                           <b class="subtitle"> Front End Developer / w3schools.com </b>
+                        </div>
+                        <div class="date">
+                            <img class="image1" src="./calendar.png" alt="">
+                             <p class="subdate">Jan 2015 -
+                             <span>Current</span></p>
+                        </div>
+                        <div class="description">
+                            <p class="subdescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste doloremque eaque alias quaerat numquam nemo, itaque deleniti. Beatae nostrum praesentium, illo, perspiciatis soluta laborum nesciunt a repellendus excepturi perferendis maiores!</p>
+                            
+                        </div>
+                        <hr>
+                    </div>
+                   \
+                    <div class="content2">
+                        <div class="title">
+                            <b class="subtitle"> Web Developer / something.com </b>
+                        </div>
+                        <div class="date">
+                            <img class="image1" src="./calendar.png" alt="">
+                            <p class="subdate">March 2012 - Dec 2014</p>
+                        </div>
+                        <div class="description">
+                            <p class="subdescription">Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                        </div>
+                        <hr>
+                    </div>
+                   
+                    <div class="content3">
+                        <div class="title">
+                            <b class="subtitle"> Graphic Designer / designsomething.com </b>
+                        </div>
+                        <div class="date">
+                            <img class="image1" src="./calendar.png" alt="">
+                            <p class="subdate">June 2010 - March 2012 </p>
+                        </div>
+                        <div class="description">
+                            <p class="subdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                </div>
+                <div class="innerbox2">
+                    <div class="education">
+                        <h4 class="education-1">Education</h4>
+                    </div>
+                    <hr>
+                    <div class="academic1">
+                        <div class="academic-title">
+                            <b class="subacademict">W3Schools.com</b>
+                        </div>
+                        <div class="academic-date">
+                            <img class="image1" src="./calendar.png" alt="">
+                            <p class="subacademicd">Forever</p>
+                        </div>
+                        <div class="academic-description">
+                            <p class="subacademicde">Web Development! All I need to know in one place</p>
+                        </div>
+                        <hr>
+                    </div>
+                   
+                    <div class="academic2">
+                        <div class="academic-title">
+                            <b class="subacademict">London Business School</b>
+                        </div>
+                        <div class="academic-date">
+                            <img src="./calendar.png" alt="" class="image1">
+                            <p class="subacademicd">2013 - 2015</p>
+                        </div>
+                        <div class="academic-description">
+                            <p class="subacademicde">Master Degree</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <hr>
+                    <div class="academic3">
+                        <div class="academic-title">
+                            <b class="subacademict">School of Coding</b>
+                        </div>
+                        <div class="academic-date">
+                            <img src="./calendar.png" alt="" class="image1">
+                            <p class="subacademicd">2010 - 2013</p>
+                        </div>
+                        <div class="academic-description">
+                            <p class="subacademicde">Bachelor Degree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot1">
+                <p>Find me on social media.</p>
+            </div>
+            <div class="foot2">
+                <div class="logo">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                      >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <style>
+                        svg {
+                          fill: #ffffff;
+                        }
+                      </style>
+                      <path
+                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                      />
+                      </svg>
+                </div>
+                <div class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                </div>
+        
+                <div class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M384,32H64A64,64,0,0,0,0,96V416a64,64,0,0,0,64,64H384a64,64,0,0,0,64-64V96A64,64,0,0,0,384,32Zm-3.907,319.309-.083.1a32.364,32.364,0,0,1-8.717,6.823,90.26,90.26,0,0,1-20.586,8.2,12.694,12.694,0,0,0-3.852,1.76c-2.158,1.909-2.1,4.64-4.4,8.55a23.137,23.137,0,0,1-6.84,7.471c-6.707,4.632-14.244,4.923-22.23,5.23-7.214.274-15.39.581-24.729,3.669-3.761,1.245-7.753,3.694-12.377,6.533-11.265,6.9-26.68,16.353-52.3,16.353s-40.925-9.4-52.106-16.279c-4.657-2.888-8.675-5.362-12.543-6.64-9.339-3.08-17.516-3.4-24.729-3.67-7.986-.307-15.523-.6-22.231-5.229a23.085,23.085,0,0,1-6.01-6.11c-3.2-4.632-2.855-7.8-5.254-9.895a13.428,13.428,0,0,0-4.1-1.834,89.986,89.986,0,0,1-20.313-8.127,32.905,32.905,0,0,1-8.3-6.284c-6.583-6.757-8.276-14.776-5.686-21.824,3.436-9.338,11.571-12.111,19.4-16.262,14.776-8.027,26.348-18.055,34.433-29.884a68.236,68.236,0,0,0,5.985-10.567c.789-2.158.772-3.329.241-4.416a7.386,7.386,0,0,0-2.208-2.217c-2.532-1.676-5.113-3.353-6.882-4.5-3.27-2.141-5.868-3.818-7.529-4.98-6.267-4.383-10.65-9.04-13.4-14.245a28.4,28.4,0,0,1-1.369-23.584c4.134-10.924,14.469-17.706,26.978-17.706a37.141,37.141,0,0,1,7.845.83c.689.15,1.37.307,2.042.482-.108-7.43.058-15.357.722-23.119,2.358-27.261,11.912-41.589,21.874-52.994a86.836,86.836,0,0,1,22.28-17.931C188.254,100.383,205.312,96,224,96s35.828,4.383,50.944,13.016a87.169,87.169,0,0,1,22.239,17.9c9.961,11.406,19.516,25.709,21.874,52.995a231.194,231.194,0,0,1,.713,23.118c.673-.174,1.362-.332,2.051-.481a37.131,37.131,0,0,1,7.844-.83c12.5,0,22.82,6.782,26.971,17.706a28.37,28.37,0,0,1-1.4,23.559c-2.74,5.2-7.123,9.861-13.39,14.244-1.668,1.187-4.258,2.864-7.529,4.981-1.835,1.187-4.541,2.947-7.164,4.682a6.856,6.856,0,0,0-1.951,2.034c-.506,1.046-.539,2.191.166,4.208a69.015,69.015,0,0,0,6.085,10.792c8.268,12.1,20.188,22.313,35.454,30.407,1.486.772,2.98,1.5,4.441,2.258.722.332,1.569.763,2.491,1.3,4.9,2.723,9.2,6.01,11.455,12.153C387.821,336.915,386.269,344.7,380.093,351.309Zm-16.719-18.461c-50.313-24.314-58.332-61.918-58.689-64.749-.431-3.379-.921-6.035,2.806-9.472,3.594-3.328,19.541-13.19,23.965-16.278,7.33-5.114,10.534-10.219,8.16-16.495-1.66-4.316-5.686-5.976-9.961-5.976a18.5,18.5,0,0,0-3.993.448c-8.035,1.743-15.838,5.769-20.354,6.857a7.1,7.1,0,0,1-1.66.224c-2.408,0-3.279-1.071-3.088-3.968.564-8.783,1.759-25.925.373-41.937-1.884-22.032-8.99-32.948-17.432-42.6-4.051-4.624-23.135-24.654-59.536-24.654S168.53,134.359,164.479,139c-8.434,9.654-15.531,20.57-17.432,42.6-1.386,16.013-.141,33.147.373,41.937.166,2.756-.68,3.968-3.088,3.968a7.1,7.1,0,0,1-1.66-.224c-4.507-1.087-12.31-5.113-20.346-6.856a18.494,18.494,0,0,0-3.993-.449c-4.25,0-8.3,1.636-9.961,5.977-2.374,6.276.847,11.381,8.168,16.494,4.425,3.088,20.371,12.958,23.966,16.279,3.719,3.437,3.237,6.093,2.805,9.471-.356,2.79-8.384,40.394-58.689,64.749-2.946,1.428-7.96,4.45.88,9.331,13.88,7.628,23.111,6.807,30.3,11.43,6.093,3.927,2.5,12.394,6.923,15.449,5.454,3.76,21.583-.266,42.335,6.6,17.433,5.744,28.116,22.015,58.963,22.015s41.788-16.3,58.938-21.973c20.795-6.865,36.89-2.839,42.336-6.6,4.433-3.055.822-11.522,6.923-15.448,7.181-4.624,16.411-3.8,30.3-11.472C371.36,337.355,366.346,334.333,363.374,332.848Z"
+                      />
+                    </svg>
+                </div>
+        
+                <div class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 384 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+                      />
+                    </svg>
+                </div>
+        
+                <div class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      />
+                    </svg>
+                </div>
+        
+                <div class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      />
+                    </svg>
+                </div>
+            </div>
+            <div class="foot3">
+                <p class="Power">Powered by Manan</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
